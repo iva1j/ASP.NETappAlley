@@ -1,0 +1,14 @@
+﻿@if (ViewBag.ErrorTitle == null)
+{
+    <h3  style="color:#ffffff";>
+        An error occured while processing your request.
+        The support team is notified and we are working on a fix.
+    </h3>
+    <h5  style="color:#ffffff";>For more information contact us on: alleycanada@gmail.com</h5>
+}
+else
+{
+    <h1 class="text-danger">@ViewBag.ErrorTitle</h1>
+    <h5 class="text-danger">@ViewBag.ErrorMessage</h5>
+}
+
